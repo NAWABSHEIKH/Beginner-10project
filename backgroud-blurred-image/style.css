@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: url("https://images.unsplash.com/photo-1601807576163-587225545555?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGVkdWNhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+span{
+    color: orangered;
+    font-size: bold;
+}
+h1{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) ;
+    font-size: 'Arial Narrow Bold' ;
+    letter-spacing: 4px;
+}
+.btn{
+    padding: 10px 24px;
+    border: 2px solid white;
+    background-color: orangered;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    /* margin: 25px 0px; */
+}
+.btn:hover{
+    filter: brightness(.8);
+    color: white;
+}
+
+.popup-container{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+width: 400px;
+height: 200px;
+    /* width: 30vw; */
+    background-color: white;
+    /* background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover; */
+    transform: translateY(-50%);
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 15px 3px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    opacity: 1;
+    transform: all 0.7s;
+    /* align-items: center; */
+
+}
+h4{
+    font-size: 23px;
+
+}
+input{
+    font-size: 18px;
+    padding: 4px;
+    color: black;
+    margin: 4px 0px;
+    border: 2px solid black;
+    text-align: center;
+}
+.cross{
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.popup-btn{
+    cursor: pointer;
+    background-color: orangered;
+    color: whitesmoke;
+}
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
